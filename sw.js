@@ -1,7 +1,9 @@
 const staticAssets = [
    './',
    './styles.css',
-   './app.js'
+   './app.js',
+   './fallback.json',
+   './images/fetch-dog.jpg'
   ];
 
 self.addEventListener('install', async event => {
@@ -45,7 +47,9 @@ async function networkFirst(req){
      cache.put(req, res.clone());
      return res;
   } catch(e) {
-   return 	await cache.match(req);
+   const  cachedResponse = 	await cache.match(req);
+   return cachedResponse || await caches.match('./fallback.json');
+
   }
  
 }
