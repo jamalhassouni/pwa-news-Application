@@ -1,5 +1,5 @@
 const apikey = '85c36847b0824547b09be916bb261e75';
-const main = document.querySelector('main');
+const main = document.querySelector('#main');
 const sourceSelector = document.querySelector('#sourceSelector');
 const defaultSrouce = 'the-washington-post';
 
@@ -51,12 +51,29 @@ async function updateNews(source = defaultSrouce) {
 
 function createArticle(article) {
     return `
-        <div class="article">
-        <a href="${article.url}">
-        <h2>${article.title}</h2>
-        <img src="${article.urlToImage}">
-        <p>${article.description}</p>
-         </a>
-         </div>
+         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 deal deal-block">
+                <div class="item-slide">
+                    <div class="box-img">
+                        <img src="${article.urlToImage}" alt="${article.title}" />
+                        <div class="text-wrap">
+                            <h4><span class="deal-data"><span class="glyphicon glyphicon-calendar"></span> ${article.publishedAt}</span></h4>
+         
+                            <div class="view-now-c">
+                                <a href="${article.url}">View Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-hover">
+                        <div class="text-wrap">
+                            <p>${article.description}</p>
+                            <h4><span class="deal-data"><span class="glyphicon glyphicon-calendar"></span> ${article.publishedAt}</span></h4>
+                            
+                            <div class="view-now-c">
+                                <a href="${article.url}">View Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 	`;
 }
