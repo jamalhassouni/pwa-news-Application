@@ -3,7 +3,9 @@ const staticAssets = [
    './styles.css',
    './app.js',
    './fallback.json',
-   './images/fetch-dog.jpg'
+   './images/fetch-dog.jpg',
+   './images/_divide.png',
+   './images/_bkg.jpg'
   ];
 
 self.addEventListener('install', async event => {
