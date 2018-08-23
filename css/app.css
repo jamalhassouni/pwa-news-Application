@@ -53,12 +53,48 @@ table {
   -webkit-user-select: none;
 }
 
+.styled-select {
+  background: url(../images/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+}
+.styled-select select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
+}
+.styled-select.slate select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
+}
+/* -------------------- Rounded Corners */
+.rounded {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.semi-square {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* -------------------- Colors: Background */
+
+.blue {
+  background-color: rgba(248, 252, 255, 0.13);
+}
 /* ==========================================================================
    Base Styles
    ========================================================================== */
 /* line 46, ../scss/_base.scss */
 html, body {
-  overflow-x: hidden;
   text-align: left;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -1016,7 +1052,7 @@ a {
 #mainNav-2 .top_search {
   height: 33px;
   position: relative;
-  top: 5px;
+  top: 0;
 }
 /* line 39, ../scss/_nav-2.scss */
 #mainNav-2 .top_search .top_search_con {
