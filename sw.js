@@ -8,6 +8,7 @@ const staticAssets = [
    './fallback.json',
    './images/fetch-dog.jpg',
    './images/_divide.png',
+   './images/15xvbd5.png',
    './images/_bkg.jpg'
   ];
 
