@@ -415,6 +415,17 @@ a {
     height: 33px;
     position: relative;
 }
+@media (max-width: 767px) {
+  #mainNav-2  {
+    padding: 20px;
+  }
+  #mainNav-2 .top_search {
+    margin: 20px 0;
+}
+.styled-select{
+    width: auto;
+}
+}
 
 #mainNav .top_search .top_search_con {
     background: #fff;
@@ -489,7 +500,6 @@ a {
     border: none;
     background: #1ab394 !important;
     font-size: 12px;
-    padding: 20px;
 }
 
 #mainNav-2 .navbar-brand {
