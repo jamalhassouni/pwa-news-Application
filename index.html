@@ -2,29 +2,127 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon-32x32.png/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon-32x32.png/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>News</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- ==============================================
+		CSS
+		=============================================== -->
+    <!-- Style-->
+    <link type="text/css" href="libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
     <header>
-        <a href="" id="logo"><h1>News</h1></a>
-        <div class="select">
+        <!-- ==============================================
+     Navigation Section
+     =============================================== -->
+        <nav class="navbar navbar-light navbar-toggleable-sm bg-faded justify-content-between" id="mainNav-2">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand mr-0"> News</a>
+            <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
+                <ul id="mainNav-2" class="navbar-nav  mx-auto">
+                    <!-- Search in right of nav -->
+                    <li class="nav-item ">
+                        <form class="top_search clearfix">
+                            <div class="top_search_con">
+                                <input class="s" placeholder="Search Here ..." type="text">
+                                <span class="top_search_icon"><i class="fa fa-search"></i></span>
+                                <input class="top_search_submit" type="submit">
+                            </div>
+                        </form>
+                    </li>
+                    <!-- Search Ends -->
+                </ul>
+                 
+                <div class="select">
             <select id="sourceSelector"></select>
             <div class="select__arrow"></div>
         </div>
+            </div>
+            <!-- /navbar-collapse -->
+        </nav>
+        <!-- /nav -->
+        <!-- <a href="" id="logo"><h1>News</h1></a>
+        <div class="select">
+            <select id="sourceSelector"></select>
+            <div class="select__arrow"></div>
+        </div>-->
     </header>
-    <section class="new-deal">
-        <div class="container" id="main">
-           
-            
+    <!-- ==============================================
+     Posts Section
+     =============================================== -->
+    <section class="posts-2">
+        <div class="container">
+            <div class="row" id="main">
+                
+            </div>
+            <!-- /.row -->
         </div>
+        <!-- /.container -->
     </section>
-    <script src="app.js"></script>
+    <!-- /.section -->
+    <!-- ==============================================
+     Footer Section
+     =============================================== -->
+    <footer class="bottom-footer">
+        <div class="container">
+            <p><span>©2018 news</span></p>
+            <ul id="menu-footer-menu">
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <!-- /li -->
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <!-- /li -->
+                <li>
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <!-- /li -->
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <!-- /li -->
+            </ul>
+            <!-- /ul -->
+        </div>
+        <!-- /container -->
+    </footer>
+    <!-- /footer -->
+    <a id="scrollup">Scroll</a>
+    <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/tether/dist/js/tether.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
