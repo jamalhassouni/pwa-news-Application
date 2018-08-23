@@ -2,14 +2,12 @@ const staticAssets = [
    './',
    './css/app.css',
    './css/font-awesome.min.css',
-   './libs/',
-   './favicon/',
+   './libs',
+   './favicon',
    './js/app.js',
    './fallback.json',
    './images/fetch-dog.jpg',
-   './images/_divide.png',
-   './images/15xvbd5.png',
-   './images/_bkg.jpg'
+   './images/15xvbd5.png'
   ];
 
 self.addEventListener('install', async event => {
