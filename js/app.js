@@ -8,21 +8,21 @@ window.addEventListener('load', async e => {
     await updateSources();
     sourceSelector.value = defaultSrouce;
 
-    sourceSelector.addEventListener('change',e => {
-        updateNews(e.target.value);      
+    sourceSelector.addEventListener('change', e => {
+        updateNews(e.target.value);
 
     });
 
-    if("serviceWorker" in navigator) {
-       try {
+    if ("serviceWorker" in navigator) {
+        try {
 
-       	navigator.serviceWorker.register('sw.js');
-         console.log('Sw registered');     
-       } catch(e) {
+            navigator.serviceWorker.register('sw.js');
+            console.log('Sw registered');
+        } catch (e) {
 
-         console.log('Sw unregistered');     
+            console.log('Sw unregistered');
 
-       }
+        }
     }
 
 });
@@ -76,12 +76,6 @@ function createArticle(article) {
                                 <h2><a href="#" class="entry-title">${article.title}</a></h2>
                                 <p>${article.description}</p>
                                 <div class="read-more">
-                                    <div class="feed pull-left">
-                                        <ul>
-                                            <li><i class="fa fa-comments"></i>200</li>&nbsp;
-                                            <li><i class="fa fa-heart-o"></i>30</li>
-                                        </ul>
-                                    </div>
                                     <!-- /feed -->
                                     <div class="continue-reading pull-right">
                                         <a href="${article.url}">Continue Reading <i class="fa fa-angle-right"></i></a>
@@ -98,16 +92,16 @@ function createArticle(article) {
                 </div>
                 <!-- /col-sm-4 -->
 
-	`;
+    `;
 }
 
 $(document).ready(function() {
     /*============================================
     Scroll To Top
-    ==============================================*/    
+    ==============================================*/
 
     //When distance from top = 250px fade button in/out
-    $(window).scroll(function(){
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
             $('#scrollup').fadeIn(300);
         } else {
@@ -116,7 +110,7 @@ $(document).ready(function() {
     });
 
     //On click scroll to top of page t = 1000ms
-    $('#scrollup').click(function(){
+    $('#scrollup').click(function() {
         $("html, body").animate({ scrollTop: 0 }, 1000);
         return false;
     });
