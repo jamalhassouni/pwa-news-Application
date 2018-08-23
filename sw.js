@@ -1,7 +1,10 @@
 const staticAssets = [
    './',
-   './styles.css',
-   './app.js',
+   './css/app.css',
+   './css/font-awesome.min.css',
+   './libs/',
+   './favicon/',
+   './js/app.js',
    './fallback.json',
    './images/fetch-dog.jpg',
    './images/_divide.png',
