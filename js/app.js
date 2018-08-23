@@ -1,7 +1,7 @@
 const apikey = '85c36847b0824547b09be916bb261e75';
 const main = document.querySelector('#main');
 const sourceSelector = document.querySelector('#sourceSelector');
-const defaultSrouce = 'the-washington-post';
+const defaultSrouce = 'bbc-news';
 
 window.addEventListener('load', async e => {
     updateNews();
@@ -63,18 +63,18 @@ function createArticle(article) {
                             <!-- /entry-header -->
                             <div class="post-content">
                                 <div class="author-post">
-                                    <a href="#"><img class="img-fluid rounded-circle" src="images/user.jpg" alt="Image"></a>
+                                    <a href="#"><img class="img-fluid rounded-circle" src="images/user.png" alt="${article.author}"></a>
                                 </div>
                                 <!-- /author -->
                                 <div class="entry-meta">
                                     <ul>
                                         <li><a href="#">${article.author}</a></li>
-                                        <li>10 min ago</li>
-                                        <li><i class="fa fa-align-left"></i>&nbsp;7 Min Read</li>
+                                        <li>${article.publishedAt}</li>
                                     </ul>
                                 </div>
                                 <!-- /.entry-meta -->
-                                <h2><a href="#" class="entry-title">${article.title}</p>
+                                <h2><a href="#" class="entry-title">${article.title}</a></h2>
+                                <p>${article.description}</p>
                                 <div class="read-more">
                                     <div class="feed pull-left">
                                         <ul>
@@ -98,34 +98,10 @@ function createArticle(article) {
                 </div>
                 <!-- /col-sm-4 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	`;
 }
 
 $(document).ready(function() {
-    
-    $('ul.nav li.dropdown').hover(function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-    }, function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-    });    
-    
     /*============================================
     Scroll To Top
     ==============================================*/    
