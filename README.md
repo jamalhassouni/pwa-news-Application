@@ -1,7 +1,7 @@
 ## Details 
 I created  a simple  News Progressive Web App (PWA) application that brought news from a variety of sources using [Newsapi](https://newsapi.org) and Javascript
 The application is responsive and easy to use
-Online demo can be found on [https://pwanews.netlify.com/](https://pwanews.netlify.com/)
+Online demo can be found on [https://pwanews.netlify.com/](https://jamalhassouni.github.io/pwa-news-Application/)
 ## Installing / Getting started
 
 To install this project you need to clone or download it.
