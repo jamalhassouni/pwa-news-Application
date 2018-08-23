@@ -1,5 +1,7 @@
 const apikey = '85c36847b0824547b09be916bb261e75';
 const main = document.querySelector('#main');
+const q = document.querySelector('#q');
+const search = document.querySelector('#form');
 const sourceSelector = document.querySelector('#sourceSelector');
 const defaultSrouce = 'bbc-news';
 
@@ -24,6 +26,19 @@ window.addEventListener('load', async e => {
 
         }
     }
+    // TODO: add search func   
+    search.addEventListener('submit', e => {
+        e.preventDefault();
+        Search(q.value);
+    });
+    q.addEventListener('keypress', e => {
+        e.preventDefault();
+        e = e || window.event;
+        var charCode = e.keyCode || e.which;
+        if (charCode === 13) {
+            Search(q.value);
+        }
+    });
 
 });
 
@@ -48,6 +63,11 @@ async function updateNews(source = defaultSrouce) {
 
 }
 
+async function Search(q) {
+    const res = await fetch(`https://newsapi.org/v2/everything?q=${q}&apiKey=${apikey}`);
+    const json = await res.json();
+    main.innerHTML = json.articles.map(createArticle).join("\n");
+}
 
 function createArticle(article) {
     return `
