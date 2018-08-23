@@ -32,7 +32,6 @@ window.addEventListener('load', async e => {
         Search(q.value);
     });
     q.addEventListener('keypress', e => {
-        e.preventDefault();
         e = e || window.event;
         var charCode = e.keyCode || e.which;
         if (charCode === 13) {
@@ -70,25 +69,27 @@ async function Search(q) {
 }
 
 function createArticle(article) {
+  const img =  article.urlToImage || '/images/No_Image_Available.jpg';
+  const author = article.author || 'author';
     return `
      <div class="col-sm-4">
                     <div class="tr-section">
                         <div class="tr-post">
                             <div class="entry-header">
                                 <div class="entry-thumbnail">
-                                    <a href="#"><img class="img-fluid" src="${article.urlToImage}" alt="${article.title}"></a>
+                                    <a href="#"><img class="img-fluid" src="${img}" alt="${article.title}"></a>
                                 </div>
                                 <!-- /entry-thumbnail -->
                             </div>
                             <!-- /entry-header -->
                             <div class="post-content">
                                 <div class="author-post">
-                                    <a href="#"><img class="img-fluid rounded-circle" src="images/user.png" alt="${article.author}"></a>
+                                    <a href="#"><img class="img-fluid rounded-circle" src="images/user.png" alt="${author}"></a>
                                 </div>
                                 <!-- /author -->
                                 <div class="entry-meta">
                                     <ul>
-                                        <li><a href="#">${article.author}</a></li>
+                                        <li><a href="#">${author}</a></li>
                                         <li>${article.publishedAt}</li>
                                     </ul>
                                 </div>
