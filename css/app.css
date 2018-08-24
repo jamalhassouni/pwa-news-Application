@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Abhaya+Libre");
 
 
+
 /*      font size         */
 
 
@@ -166,6 +167,7 @@ table {
 }
 
 
+
 /* -------------------- Rounded Corners */
 
 .rounded {
@@ -181,11 +183,13 @@ table {
 }
 
 
+
 /* -------------------- Colors: Background */
 
 .blue {
     background-color: rgba(248, 252, 255, 0.13);
 }
+
 
 
 /* ==========================================================================
@@ -199,6 +203,7 @@ body {
     /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
 }
+
 
 
 /* ------------------------------------------------------------------- */
@@ -299,6 +304,7 @@ hr.mint {
 }
 
 
+
 /* ------------------------------------------------------------------- */
 
 
@@ -334,6 +340,7 @@ p a,
 p a:visited {
     line-height: inherit;
 }
+
 
 
 /* ------------------------------------------------------------------- */
@@ -399,6 +406,7 @@ a {
 }
 
 
+
 /* ==========================================================================
    Search Section Start
    ========================================================================== */
@@ -415,16 +423,17 @@ a {
     height: 33px;
     position: relative;
 }
+
 @media (max-width: 767px) {
-  #mainNav-2  {
-    padding: 20px;
-  }
-  #mainNav-2 .top_search {
-    margin: 20px 0;
-}
-.styled-select{
-    width: auto;
-}
+    #mainNav-2 {
+        padding: 20px;
+    }
+    #mainNav-2 .top_search {
+        margin: 20px 0;
+    }
+    .styled-select {
+        width: auto;
+    }
 }
 
 #mainNav .top_search .top_search_con {
@@ -487,6 +496,7 @@ a {
 #mainNav .nav-item a.nav-link.active {
     color: #fff !important;
 }
+
 
 
 
