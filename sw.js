@@ -2,7 +2,10 @@ const staticAssets = [
     './',
     './css/app.css',
     './css/font-awesome.min.css',
-    './libs',
+    './libs/bootstrap',
+    './libs/fonts',
+    './libs/jquery',
+    './libs/tether',
     './favicon',
     './js/app.js',
     './fallback.json',
@@ -35,7 +38,7 @@ self.addEventListener('fetch', event => {
 });
 
 async function cacheFirst(req) {
-
+    if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
     // check if have response request
     const cachedResponse = await caches.match(req);
     return cachedResponse || fetch(req);
