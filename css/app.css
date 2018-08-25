@@ -434,6 +434,11 @@ a {
     .styled-select {
         width: auto;
     }
+    .styled-select select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   }
 }
 
 #mainNav .top_search .top_search_con {
