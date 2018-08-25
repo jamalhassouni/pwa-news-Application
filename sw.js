@@ -18,6 +18,7 @@ const staticAssets = [
     './js/app.js',
     './fallback.json',
     './images/fetch-dog.jpg',
+    './images/No_Image_Available.jpg',
     './images/15xvbd5.png'
 ];
 
