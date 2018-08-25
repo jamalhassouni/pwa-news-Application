@@ -69,8 +69,8 @@ async function Search(q) {
 }
 
 function createArticle(article) {
-  const img =  article.urlToImage || window.location.href+'/images/No_Image_Available.jpg';
-  const author = article.author || 'author';
+    const img = article.urlToImage || window.location.href + '/images/No_Image_Available.jpg';
+    const author = article.author || 'author';
     return `
      <div class="col-sm-4">
                     <div class="tr-section">
