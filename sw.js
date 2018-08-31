@@ -1,7 +1,6 @@
 const staticAssets = [
     './',
     './css/app.css',
-    './css/font-awesome.min.css',
     './libs/bootstrap/dist/css/bootstrap.css',
     './libs/jquery/dist/jquery.js',
     './libs/tether/dist/js/tether.min.js',
