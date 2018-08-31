@@ -45,7 +45,7 @@
             <button name="navbar menu" aria-label="Menu" aria-labelledby="mainNav-2" class="navbar-toggler navbar-toggler-right"  data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span aria-label="toggler" class="navbar-toggler-icon"></span>
             </button>
-            <a href="index.html" class="navbar-brand mr-0"> News</a>
+            <a href="index.html" tabindex="0" class="navbar-brand mr-0"> News</a>
             <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
                 <ul class="navbar-nav  mx-auto">
                     <!-- Search in right of nav -->
@@ -53,7 +53,7 @@
                         <form id="form" class="top_search clearfix">
                             <div class="top_search_con">
                                 <input class="s" id="q" autocomplete="off" placeholder="Search Here ..." type="text">
-                                <span class="top_search_icon"><i class="glyphicon glyphicon-search"></i></span>
+                                <span aria-hidden=”true” class="top_search_icon"><i class="glyphicon glyphicon-search"></i></span>
                                 <input class="top_search_submit" id="search" type="submit">
                             </div>
                         </form>
@@ -72,31 +72,31 @@
     <!-- ==============================================
      Posts Section
      =============================================== -->
-    <section class="posts-2">
+    <main class="posts-2">
         <div class="container">
             <div class="row" id="main">
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </section>
+    </main>
     <!-- /.section -->
     <!-- ==============================================
      Footer Section
      =============================================== -->
     <footer class="bottom-footer">
         <div class="container">
-            <p><span>©2018 news</span></p>
+            <p><span tabindex="0">©2018 news</span></p>
             <ul id="menu-footer-menu">
-                <li>
+                <li tabindex="0">
                     <a href="https://newsapi.org">newsapi.org</a>
                 </li>
                 <!-- /li -->
-                <li>
+                <li tabindex="0">
                     <a href="#">Privacy</a>
                 </li>
                 <!-- /li -->
-                <li>
+                <li tabindex="0">
                     <a href="#">Terms & Conditions</a>
                 </li>
                 <!-- /li -->
@@ -106,7 +106,7 @@
         <!-- /container -->
     </footer>
     <!-- /footer -->
-    <a id="scrollup">Scroll</a>
+    <a id="scrollup" tabindex="0">Scroll</a>
     <!-- ==============================================
 	 Scripts
 	 =============================================== -->

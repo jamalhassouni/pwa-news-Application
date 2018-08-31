@@ -47,7 +47,7 @@ async function updateSources() {
 
 
     sourceSelector.innerHTML = json.sources
-        .map(src => `<option value="${src.id}">${src.name}</option>`)
+        .map(src => `<option tabindex="0" value="${src.id}">${src.name}</option>`)
         .join('\n');
 }
 
@@ -77,7 +77,7 @@ function createArticle(article) {
                         <div class="tr-post">
                             <div class="entry-header">
                                 <div class="entry-thumbnail">
-                                    <a href="#"><img class="img-fluid" src="${img}" alt="${article.title}"></a>
+                                    <a tabindex="0" href="#"><img class="img-fluid" src="${img}" alt="${article.title}"></a>
                                 </div>
                                 <!-- /entry-thumbnail -->
                             </div>
@@ -89,13 +89,13 @@ function createArticle(article) {
                                 <!-- /author -->
                                 <div class="entry-meta">
                                     <ul>
-                                        <li><a href="#">${author}</a></li>
-                                        <li>${article.publishedAt}</li>
+                                        <li tabindex="0"><a href="#">${author}</a></li>
+                                        <li tabindex="0">${article.publishedAt}</li>
                                     </ul>
                                 </div>
                                 <!-- /.entry-meta -->
-                                <h2><a href="#" class="entry-title">${article.title}</a></h2>
-                                <p>${article.description}</p>
+                                <h2 tabindex="0"><a href="#" class="entry-title">${article.title}</a></h2>
+                                <p tabindex="0">${article.description}</p>
                                 <div class="read-more">
                                     <!-- /feed -->
                                     <div class="continue-reading pull-right">
