@@ -12,6 +12,7 @@ const staticAssets = [
     './favicon/apple-icon-152x152.png',
     './favicon/apple-icon-180x180.png',
     './favicon/android-icon-192x192.png',
+    './favicon/android-chrome-512x512.png',
     './favicon/favicon-32x32.png',
     './favicon/favicon-96x96.png',
     './favicon/favicon-16x16.png',
