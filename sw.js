@@ -3,7 +3,6 @@ const staticAssets = [
     './css/app.css',
     './libs/bootstrap/dist/css/bootstrap.css',
     './libs/jquery/dist/jquery.js',
-    './libs/tether/dist/js/tether.min.js',
     './libs/bootstrap/dist/js/bootstrap.js',
     './favicon/apple-icon-57x57.png',
     './favicon/apple-icon-76x76.png',
