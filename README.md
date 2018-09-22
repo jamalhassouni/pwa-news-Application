@@ -37,3 +37,9 @@ Serve folder with your server of choice.
 4. Now you can browse [http://localhost:5000](http://localhost:5000)
 
 
+## Technology
+
+- HTML
+- CSS
+- Javascript
+- ES6 
